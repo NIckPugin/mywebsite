@@ -21,33 +21,38 @@
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+<style>
+        .navbar-nav .nav-link:hover {
+            color: var(--bs-info) !important;               /* Applies Bootstrap info color on hover */
+            /*text-decoration: underline;*/    /* Optional: Adds underline for better visibility */
+        }
+</style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-dark" id="mainNav" style="background: #191a1a;font-size: 16px;">
-        <div class="container"><a class="navbar-brand d-flex align-items-start" href="index.html"><span style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 44px;line-height: 46px;text-align: left;">NICHOLAS PUGIN</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+<body style="background: #191a1a;">
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-dark" id="mainNav" style="background:#191a1a;font-size:16px;">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html"><span style="font-family:'League Spartan', sans-serif;color:var(--bs-primary-border-subtle);font-size:38px;line-height:44px;"> NICHOLAS PUGIN </span></a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler" type="button"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html" style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 25px;">Home</a></li>
-                    <li class="nav-item" style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 25px;"><a class="nav-link" href="projects.html" style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 25px;">Projects</a></li>
-                    <li class="nav-item" style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 25px;"><a class="nav-link" href="about.html" style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 25px;">About</a></li>
-                    <li class="nav-item" style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 25px;"><a class="nav-link" href="contacts.html" style="font-family: 'League Spartan', sans-serif;color: var(--bs-primary-border-subtle);font-size: 25px;">Contact</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html" style="font-family:'League Spartan', sans-serif;color:var(--bs-primary-border-subtle);font-size:25px;"> HOME </a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html" style="font-family:'League Spartan', sans-serif;color:var(--bs-primary-border-subtle);font-size:25px;"> PROJECTS </a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="font-family:'League Spartan', sans-serif;color:var(--bs-primary-border-subtle);font-size:25px;"> ABOUT </a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html" style="font-family:'League Spartan', sans-serif;color:var(--bs-primary-border-subtle);font-size:25px;"> CONTACT </a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="bg-dark" style="background: var(--bs-emphasis-color);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.1" src="assets/img/products/image-4.jpg">
-        <h1 class="fw-bold" style="background: #191a1a;font-size: 63px;letter-spacing: -8px;line-height: 51.2px;height: 80px;max-height: 80px;min-height: 35px;margin-top: 11px;">LEARN.</h1>
-        <h1 class="fw-bold" style="background: #191a1a;font-size: 63px;letter-spacing: -8px;line-height: 51.2px;height: 80px;max-height: 80px;min-height: 35px;margin-top: -37px;">CREATE.</h1>
-        <h1 class="fw-bold" style="background: #191a1a;font-size: 63px;letter-spacing: -8px;line-height: 51.2px;height: 80px;max-height: 80px;min-height: 35px;margin-top: -37px;">EXPERIENCE.</h1>
+    <header class="bg-dark" style="background: var(--bs-emphasis-color);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.1" src="assets/img/products/image-4-4096px.jpg">
+        <h1 class="fw-bold col-md-4" style="background: #191a1a;font-size: 63px;letter-spacing: -5px;line-height: 51.2px;height: 80px;max-height: 80px;min-height: 35px;margin-top: 11px;">LEARN.</h1>
+        <h1 class="fw-bold" style="background: #191a1a;font-size: 63px;letter-spacing: -5px;line-height: 51.2px;height: 80px;max-height: 80px;min-height: 35px;margin-top: -37px;">CREATE.</h1>
+        <h1 class="fw-bold" style="background: #191a1a;font-size: 63px;letter-spacing: -5px;line-height: 51.2px;height: 80px;max-height: 80px;min-height: 35px;margin-top: -37px;">EXPERIENCE.</h1>
     </header>
     <section class="py-5" style="background: #2b2f3a;color: #2b2f3a;"></section>
     <section style="background: #2b2f3a;">
         <div class="container bg-dark py-5" style="background: #191a1a;border-style: none;border-color: #191a1a;--bs-dark: #191a1a;--bs-dark-rgb: 25,26,26;opacity: 1;backdrop-filter: opacity(1);-webkit-backdrop-filter: opacity(1);min-width: 320px;margin-top: -62px;">
             <div class="row" style="background: #191a1a;">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2" style="color: #5f8ea8;">My Projects</p>
-                    <h3 class="fw-bold">What we can do for you</h3>
+                    <h3 class="fw-bold">MY PROJECTS AND CREATIONS</h3>
                 </div>
             </div>
             <div class="py-5 p-lg-5" style="background: #191a1a;min-width: 300px;max-width: 1320px;">
