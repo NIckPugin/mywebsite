@@ -224,3 +224,8 @@
   --bs-link-hover-color-rgb: 95,142,168;
 }
 
+/* Hover effect for the icon */
+.icon-grow:hover {
+  transform: scale(1.1); /* Grow the icon by 10% */
+  transition: transform 0.1s ease; /* Smooth transition */
+}
