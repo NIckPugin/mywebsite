@@ -3,15 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RGBE72BHEH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RGBE72BHEH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-RGBE72BHEH');
-</script>
+        gtag('config', 'G-RGBE72BHEH');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>About Me Page</title>
     <meta name="description" content="Welcome to my personal website where I showcase and deep dive into my projects, experiences and interests.">
@@ -21,11 +21,11 @@
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
-<style>
+    <style>
         .navbar-nav .nav-link:hover {
             color: var(--bs-info) !important;  /* Applies Bootstrap info color on hover */
         }
-</style>
+    </style>
 </head>
 
 <body>
@@ -53,9 +53,7 @@
                 <p style="font-size: 20px;text-align: center;">I'm a passionate explorer of the intersections between technology, creativity, and human potential. With a background that spans robotics, game development, digital art, and sports science, I thrive on learning and adapting to new challenges. My journey is driven by a curiosity to understand how things work and a desire to create, innovate, and grow. Here, you'll find a collection of my diverse projects and experiences, each reflecting my commitment to continuous learning and growth. Let's explore the possibilities together.</p>
             </div>
         </div>
-        <div class="d-flex">
-            <div></div>
-        </div>
+        
         <div class="container py-5">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 d-sm-flex justify-content-sm-center">
                 <div class="col mb-4">
@@ -93,6 +91,92 @@
                 </div>
             </div>
         </div>
+
+        <!-- Time line milestone 1 -->
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="accordion" id="accordionExample1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Milestone 1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                <div class="accordion-body">
+                                    Details about milestone 1.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Time line milestone 2 -->
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="accordion" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Milestone 2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    Details about milestone 2.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Time line milestone 3 -->
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="accordion" id="accordionExample3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Milestone 3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    Details about milestone 3.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Time line milestone 4 -->
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="accordion" id="accordionExample4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Milestone 4
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample4">
+                                <div class="accordion-body">
+                                    Details about milestone 4.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Timeline Items -->
+            <!-- Repeat the timeline-item structure as needed -->
+        </div>        
+        
     </section>
     <footer class="bg-dark" style="background: #191a1a;--bs-dark: #191a1a;--bs-dark-rgb: 25,26,26;">
         <div class="container py-4 py-lg-5" style="background: #191a1a;">
@@ -140,6 +224,7 @@
             </div>
         </div>
     </footer>
+
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
 </body>
