@@ -230,85 +230,86 @@
   transition: transform 0.1s ease; /* Smooth transition */
 }
 
-/* Timeline tree */
+/* Adds a timeline if the screen is big enough */
+@media (min-width: 768px) {
+  
+  /* Timeline main stem */
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 80%;
+  }
 
-.timeline {
-  position: relative;
-  margin: 0 auto;
-  padding: 40px 0;
-  width: 80%;
-}
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ddd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #ddd;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1px;
-}
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+  }
 
-.timeline-item {
-  padding: 10px 40px;
-  position: relative;
-  width: 50%;
-}
+  .timeline-item.left {
+    left: 0;
+  }
 
-.timeline-item.left {
-  left: 0;
-}
+  .timeline-item.right {
+    left: 50%;
+  }
 
-.timeline-item.right {
-  left: 50%;
-}
+  .timeline-item .content {
+    padding: 20px;
+    position: relative;
+  }
 
-/* Remove the white block */
-.timeline-item .content {
-  padding: 20px;
-  position: relative;
-}
+  /* Add small branches */
 
+  .timeline-item.right::before {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    width: 50px;
+    height: 6px;
+    background-color: #ddd;
+  }
 
-/* Add small branches */
+  .timeline-item.right .content::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+  }
 
-.timeline-item.right::before {
-  content: '';
-  position: absolute;
-  top: 58px;
-  left: 0px;
-  width: 50px;
-  height: 6px;
-  background-color: #ddd;
-}
+  .timeline-item.left::before {
+    content: '';
+    position: absolute;
+    top: 58px;
+    right: 0px;
+    width: 50px;
+    height: 6px;
+    background-color: #ddd;
+  }
 
-.timeline-item.right .content::after {
-  content: '';
-  position: absolute;
-  top: 40px;
-  left: 5px;
-  border-width: 11px;
-  border-style: solid;
-  border-color: transparent transparent transparent #fff; /* Match with background to "hide" arrow */
-}
-
-.timeline-item.left::before {
-  content: '';
-  position: absolute;
-  top: 58px;
-  right: 0px;
-  width: 50px;
-  height: 6px;
-  background-color: #ddd;
-}
-
-.timeline-item.left .content::after {
-  content: '';
-  position: absolute;
-  top: 40px;
-  right: 5px;
-  border-width: 11px;
-  border-style: solid;
-  border-color: transparent #fff transparent transparent; /* Match with background to "hide" arrow */
+  .timeline-item.left .content::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+  }
 }
