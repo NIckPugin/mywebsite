@@ -1,13 +1,13 @@
 // Milestone data
 const milestones = [
-    { title: 'Milestone 1', details: 'Details about milestone 1' },
-    { title: 'Milestone 2', details: 'Details about milestone 2' },
-    { title: 'Milestone 3', details: 'Details about milestone 3' },
-    { title: 'Milestone 4', details: 'Details about milestone 4' },
-    { title: 'Milestone 5', details: 'Details about milestone 5' },
-    { title: 'Milestone 6', details: 'Details about milestone 6' },
-    { title: 'Milestone 7', details: 'Details about milestone 7' },
-    { title: 'Milestone 8', details: 'Details about milestone 8' }
+    { date: 'AUG 2023 -  PRESENT', title:'RND Engineer - Furhat Robotics AB', details: 'Details about milestone 1' },
+    { date: 'OCT 2020 - AUG 2023', title:'Production Engineer - Furhat Robotics AB', details: 'Details about milestone 2' },
+    { date: 'JUN 2018 - OCT 2020', title:'Robot Technician - Furhat Robotics AB', details: 'Details about milestone 3' },
+    { date: 'Milestone 4', title:'Milestone 4 title', details: 'Details about milestone 4' },
+    { date: 'Milestone 5', title:'Milestone 5 title', details: 'Details about milestone 5' },
+    { date: 'Milestone 6', title:'Milestone 6 title', details: 'Details about milestone 6' },
+    { date: 'Milestone 7', title:'Milestone 7 title', details: 'Details about milestone 7' },
+    { date: 'Milestone 8', title:'Milestone 8 title', details: 'Details about milestone 8' }
 ];
 
 // Get the container element
@@ -27,8 +27,11 @@ milestones.forEach((milestone, index) => {
                         <h2 class="accordion-header" id="heading${index + 1}">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index + 1}" aria-expanded="false" aria-controls="collapse${index + 1}">
                                 ${milestone.title}
+                                <br>
+                                ${milestone.date}
                             </button>
                         </h2>
+
                         <div id="collapse${index + 1}" class="accordion-collapse collapse" aria-labelledby="heading${index + 1}" data-bs-parent="#accordionExample${index + 1}">
                             <div class="accordion-body">
                                 ${milestone.details}
