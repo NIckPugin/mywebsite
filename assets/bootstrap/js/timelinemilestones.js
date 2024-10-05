@@ -1,8 +1,8 @@
 // Milestone data
 const milestones = [
-    { date: 'AUG 2023 -  PRESENT', title:'RND Engineer - Furhat Robotics AB', details: 'Details about milestone 1' },
-    { date: 'OCT 2020 - AUG 2023', title:'Production Engineer - Furhat Robotics AB', details: 'Details about milestone 2' },
-    { date: 'JUN 2018 - OCT 2020', title:'Robot Technician - Furhat Robotics AB', details: 'Details about milestone 3' },
+    { date: 'AUG 2023 -  PRESENT', title:'RND Engineer - Furhat Robotics AB', details: 'In addition to continued management of the responsibilities from my previous roles, my main focus had been shifted toward finding innovative solutions to improve the product in terms of design, function, production and stability, which also included the prototyping, testing and implamentation thereof.' },
+    { date: 'OCT 2020 - AUG 2023', title:'Production Engineer - Furhat Robotics AB', details: 'I provided assistance, feedback and instruction on tasks relating to the assembly and shipments of products to and from our external production facility. I was also in charge of handling orders, shipments and repairs of products to and from customers, as well as hardware/logistics related customer support.' },
+    { date: 'JUN 2018 - OCT 2020', title:'Robot Technician - Furhat Robotics AB', details: 'I was responsible for the in-house assembly of our products, and by proxy identifying areas for improvement in the production process and the product in general. I also managed inventory, including outbound and inbound orders, of stock and components for production.' },
     { date: 'Milestone 4', title:'Milestone 4 title', details: 'Details about milestone 4' },
     { date: 'Milestone 5', title:'Milestone 5 title', details: 'Details about milestone 5' },
     { date: 'Milestone 6', title:'Milestone 6 title', details: 'Details about milestone 6' },
